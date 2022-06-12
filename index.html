@@ -12,29 +12,42 @@
 <body>
   <header class="header">
     <img src="img/logo.png" alt="logo">
-    <button>Voltar ao Menu</button>
+    <button onclick="backToMenu()" class="escondido" id="voltarMenu">Voltar ao Menu</button>
   </header>
 
-  <div class="menu">
-    <button>Novo Jogo</button>
-    <button>Adicionar Palavras</button>
+  <div class="menu-content" id="menuId">
+    <div class="menu">
+      <button onclick="iniciaJogo()">Novo Jogo</button>
+      <button onclick="adicionar()">Adicionar Palavras</button>
+    </div>
   </div>
 
 
-  <div class="palavra">
+  <div class="palavra escondido" id="menuAdicionarPalavra">
     <input name="adiciona" id="add" placeholder="Digite uma palavra"></input>
     <div class="aviso">
       <img src="img/alert.svg" alt="">
       <p>Máx. de 8 letras</p>
     </div>
     <div class="btns">
-      <button onclick="adicionar()">Adicionar</button>
+      <button onclick="addPalavra()">Adicionar</button>
       <button>Começar</button>
     </div>
   </div>
 
   <div class="jogo">
+    <section class="forca">
+      <img class="selected" src="img/erro/forca.png" alt="start">
+      <img src="img/erro/forca01.png" alt="erro1">
+      <img src="img/erro/forca02.png" alt="erro2">
+      <img src="img/erro/forca03.png" alt="erro3">
+      <img src="img/erro/forca04.png" alt="erro4">
+      <img src="img/erro/forca05.png" alt="erro5">
+      <img src="img/erro/forca06.png" alt="erro6">
+    </section>
+    <div>
 
+    </div>
   </div>
 
   <footer class="footer">
