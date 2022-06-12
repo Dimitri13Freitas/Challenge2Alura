@@ -16,32 +16,30 @@ body {
   align-items: flex-end;
   gap:50px;
 }
-.header a {
+.header button {
   display: inline;
-  background-color: blue;
-  color:white;
   padding:10px 20px;
   font-size:14px;
-  border-radius:5px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  transition: 0.3s;
 }
-.header a:hover {
+.header button:hover {
   transform: translateY(2px);
   box-shadow: none;
 }
-
-/*Menu*/
-.menu a {
-  display: block;
+button {
   background-color: blue;
-  color:white;
-  padding:30px 50px;
-  border-radius:5px;
-  transition: 0.3s;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: none;
+  border-radius:5px;
+  font-size:16px;
+  transition: 0.3s;
+  color:white;
 }
-.menu a:hover {
+/*Menu*/
+.menu button {
+  display: block;
+  padding:30px 50px;
+}
+.menu button:hover {
   transform: translateY(2px);
   box-shadow: none;
 }
@@ -76,13 +74,6 @@ body {
 .palavra button {
   margin:5px 0 10px 10px;
   padding:20px 65px;
-  border:none;
-  background-color: blue;
-  color:white;
-  border-radius:5px;
-  font-size: 16px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  transition: 0.3s;
 }
 .palavra button:hover {
   transform: translateY(2px);

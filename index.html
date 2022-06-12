@@ -11,13 +11,32 @@
 
 <body>
   <header class="header">
-    <img src="img/logo.png" alt="">
+    <img src="img/logo.png" alt="logo">
+    <button>Voltar ao Menu</button>
   </header>
 
   <div class="menu">
-    <a href="jogo.html">Novo Jogo</a>
-    <a href="palavra.html">Adicionar Palavras</a>
+    <button>Novo Jogo</button>
+    <button>Adicionar Palavras</button>
   </div>
+
+
+  <div class="palavra">
+    <input name="adiciona" id="add" placeholder="Digite uma palavra"></input>
+    <div class="aviso">
+      <img src="img/alert.svg" alt="">
+      <p>Máx. de 8 letras</p>
+    </div>
+    <div class="btns">
+      <button onclick="adicionar()">Adicionar</button>
+      <button>Começar</button>
+    </div>
+  </div>
+
+  <div class="jogo">
+
+  </div>
+
   <footer class="footer">
     <section>
       <a href="www.linkedin.com/in/dimitri13"><img src="img/linkedin.png" alt=""></a>
