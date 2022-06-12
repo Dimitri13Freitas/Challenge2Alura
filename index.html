@@ -24,7 +24,7 @@
 
 
   <div class="palavra escondido" id="menuAdicionarPalavra">
-    <input name="adiciona" id="add" placeholder="Digite uma palavra"></input>
+    <input id="add" placeholder="Digite uma palavra"></input>
     <div class="aviso">
       <img src="img/alert.svg" alt="">
       <p>Máx. de 8 letras</p>
@@ -35,19 +35,23 @@
     </div>
   </div>
 
-  <div class="jogo">
-    <section class="forca">
-      <img class="selected" src="img/erro/forca.png" alt="start">
-      <img src="img/erro/forca01.png" alt="erro1">
-      <img src="img/erro/forca02.png" alt="erro2">
-      <img src="img/erro/forca03.png" alt="erro3">
-      <img src="img/erro/forca04.png" alt="erro4">
-      <img src="img/erro/forca05.png" alt="erro5">
-      <img src="img/erro/forca06.png" alt="erro6">
-    </section>
-    <div>
-
+  <div class="jogo escondido" id="jogoId">
+    <div class="jogo-content">
+      <section class="forca">
+        <img class="selected" src="img/erro/forca.png" alt="start">
+        <img src="img/erro/forca01.png" alt="erro1">
+        <img src="img/erro/forca02.png" alt="erro2">
+        <img src="img/erro/forca03.png" alt="erro3">
+        <img src="img/erro/forca04.png" alt="erro4">
+        <img src="img/erro/forca05.png" alt="erro5">
+        <img src="img/erro/forca06.png" alt="erro6">
+      </section>
+      <section class="erros">
+        <div class="letrasErros"></div>
+      </section>
     </div>
+    <div class="plavraSecreta"></div>
+  </div>
   </div>
 
   <footer class="footer">

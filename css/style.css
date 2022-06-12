@@ -8,6 +8,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f7f7f7;
 }
+span {
+  margin:0 2px;
+  max-width: 1ch;
+}
 button {
   background-color: blue;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -19,9 +23,6 @@ button {
 }
 
 /*Início*/
-.jogo {
-  display: none;
-}
 
 .escondido {
   display:none;
@@ -119,9 +120,31 @@ button {
 }
 
 /*Jogo*/
+.jogo-content {
+  display:flex;
+  justify-content: center;
+  margin-top:10px;
+  gap: 30px;
+  flex-wrap: wrap-reverse;
+}
 .forca img {
   display: none;
 }
 div section .selected {
-  display: block;
+  display: inline-block;
+  /* background-color: red; */
+}
+/* .erros div{
+  text-align: center;
+  max-width: 10ch;
+  padding:10px 30px 15px;
+  color:darkblue;
+  font-weight:bold ;
+  border:3px blue solid;
+  border-radius:5px;
+  background-color: #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} */
+.erros div h4 {
+  margin-bottom:8px;
 }
