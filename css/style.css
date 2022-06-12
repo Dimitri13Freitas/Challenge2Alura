@@ -1,0 +1,120 @@
+/*Geral*/
+* {
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+}
+
+/*Header*/
+.header {
+  display: flex;
+  padding:45px 0 40px 40px;
+  align-items: flex-end;
+  gap:50px;
+}
+.header a {
+  display: inline;
+  background-color: blue;
+  color:white;
+  padding:10px 20px;
+  font-size:14px;
+  border-radius:5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: 0.3s;
+}
+.header a:hover {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+/*Menu*/
+.menu a {
+  display: block;
+  background-color: blue;
+  color:white;
+  padding:30px 50px;
+  border-radius:5px;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.menu a:hover {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+.menu {
+  margin-top:90px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:30px;
+}
+
+/*Adicionar Palavra*/
+.palavra {
+  margin:65px auto;
+  max-width: 900px;
+}
+.palavra input{
+  margin-left:10px;
+  max-width:225px;
+  padding:5px 15px 5px 5px;
+  color:#0a3871;
+  border:none;
+  font-size:24px;
+  background-color:#f7f7f7;
+  resize: none;
+}
+.palavra input::placeholder{
+  font-size:24px;
+  color:#0a3871;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.palavra button {
+  margin:5px 0 10px 10px;
+  padding:20px 65px;
+  border:none;
+  background-color: blue;
+  color:white;
+  border-radius:5px;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: 0.3s;
+}
+.palavra button:hover {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+.aviso {
+  margin-top:70px;
+  margin-left:10px;
+  display: flex;
+  gap:10px;
+  align-items: center;
+  color:#495057;
+}
+
+/*Footer*/
+.footer {
+  font-size: 15px;
+	width: 100%;
+	background-color: #0a3871;
+	padding: 16px 0 10px 0;
+	position: fixed;
+	bottom: 0;
+}
+.footer p {
+  text-align: center;
+  color: white;
+  margin-top:15px;
+  font-weight: bold;
+}
+.footer section{
+  margin-bottom:10px;
+  display: flex;
+  justify-content: center;
+  gap:15px;
+}
