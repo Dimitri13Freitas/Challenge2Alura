@@ -21,9 +21,6 @@ button {
   transition: 0.3s;
   color:white;
 }
-
-/*Início*/
-
 .escondido {
   display:none;
 }
@@ -58,12 +55,14 @@ button {
   flex-direction: column;
   align-items: center;
   gap:30px;
+  color:#495057;
 }
 
 /*Adicionar Palavra*/
 .palavra {
   margin:65px auto;
   max-width: 900px;
+  transition:0.5s;
 }
 .palavra input{
   margin-left:10px;
@@ -107,8 +106,8 @@ button {
 	bottom: 0;
 }
 .footer p {
-  text-align: center;
   color: white;
+  text-align: center;
   margin-top:15px;
   font-weight: bold;
 }
@@ -123,28 +122,33 @@ button {
 .jogo-content {
   display:flex;
   justify-content: center;
-  margin-top:10px;
-  gap: 30px;
+  gap: 50px;
   flex-wrap: wrap-reverse;
+  color:#0a3871;
 }
 .forca img {
   display: none;
 }
-div section .selected {
-  display: inline-block;
-  /* background-color: red; */
+.forca .selected {
+  display: block;
 }
-/* .erros div{
+span {
+  color:#0a3871;
+  font-size:20px;
+  text-transform: uppercase;
+  margin:0;
+}
+.palavraSecreta  {
   text-align: center;
-  max-width: 10ch;
-  padding:10px 30px 15px;
-  color:darkblue;
-  font-weight:bold ;
-  border:3px blue solid;
-  border-radius:5px;
-  background-color: #fafafa;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-} */
-.erros div h4 {
-  margin-bottom:8px;
+  color:#0a3871;
+}
+.palavraSecreta span {
+  margin:0 2px;
+  font-size: 38px;
+}
+.msgAdicionado {
+  color:green;
+  position:absolute;
+  top:175px;
+  font-weight: bold;
 }

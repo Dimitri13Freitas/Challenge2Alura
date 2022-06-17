@@ -19,45 +19,49 @@
     <div class="menu">
       <button onclick="iniciaJogo()">Novo Jogo</button>
       <button onclick="adicionar()">Adicionar Palavras</button>
+      <p>Primeiro Adicione suas palavras</p>
     </div>
   </div>
 
 
   <div class="palavra escondido" id="menuAdicionarPalavra">
-    <input id="add" placeholder="Digite uma palavra"></input>
+    <p class="msgAdicionado escondido">✓ Adicionado</p>
+    <input id="add" placeholder="Digite uma palavra">
     <div class="aviso">
       <img src="img/alert.svg" alt="">
       <p>Máx. de 8 letras</p>
     </div>
     <div class="btns">
       <button onclick="addPalavra()">Adicionar</button>
-      <button>Começar</button>
+      <button onclick="iniciaJogo()">Começar</button>
     </div>
   </div>
 
   <div class="jogo escondido" id="jogoId">
     <div class="jogo-content">
-      <section class="forca">
+      <div class="forca">
         <img class="selected" src="img/erro/forca.png" alt="start">
-        <img src="img/erro/forca01.png" alt="erro1">
-        <img src="img/erro/forca02.png" alt="erro2">
-        <img src="img/erro/forca03.png" alt="erro3">
-        <img src="img/erro/forca04.png" alt="erro4">
-        <img src="img/erro/forca05.png" alt="erro5">
-        <img src="img/erro/forca06.png" alt="erro6">
-      </section>
-      <section class="erros">
-        <div class="letrasErros"></div>
-      </section>
+        <img class="" src="img/erro/forca01.png" alt="erro1">
+        <img class="" src="img/erro/forca02.png" alt="erro2">
+        <img class="" src="img/erro/forca03.png" alt="erro3">
+        <img class="" src="img/erro/forca04.png" alt="erro4">
+        <img class="" src="img/erro/forca05.png" alt="erro5">
+        <img class="" src="img/erro/forca06.png" alt="erro6">
+      </div>
+      <div class="erros">
+        <h3>Letras erradas</h3>
+        <span class="erroSpan"></span>
+      </div>
     </div>
-    <div class="plavraSecreta"></div>
-  </div>
+    <div class="palavraSecreta">
+
+    </div>
   </div>
 
   <footer class="footer">
     <section>
-      <a href="www.linkedin.com/in/dimitri13"><img src="img/linkedin.png" alt=""></a>
-      <a href="https://github.com/Dimitri13Freitas"><img src="img/git.png" alt=""></a>
+      <a href="www.linkedin.com/in/dimitri13"><img src="img/linkedin.png" alt="linkedin"></a>
+      <a href="https://github.com/Dimitri13Freitas"><img src="img/git.png" alt="Git-Hub"></a>
     </section>
     <p>Dimitri Freitas &copy; Alguns Direitos reservados</p>
   </footer>
